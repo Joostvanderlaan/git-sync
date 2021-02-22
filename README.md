@@ -26,6 +26,10 @@ Add to crontab, syncing every 5 minutes:
 
 	  */5 * * * * ~/git-sync.sh                                              
 
+Check cron log (Ubuntu)
+
+	sudo grep -i cron /var/log/syslog | tail -1
+
 ## Use case
 
 Suppose you have a set of text files you care about, multiple machines

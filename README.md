@@ -28,7 +28,7 @@ Add to crontab, syncing every 5 minutes:
 
 Check cron log (Ubuntu)
 
-	sudo grep -i cron /var/log/syslog | tail -1
+	sudo grep -i cron /var/log/syslog | tail -50
 
 ## Use case
 

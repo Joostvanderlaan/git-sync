@@ -8,6 +8,24 @@ as crucial as having one.
 
 2012-2018 by Simon Thum and contributors, licensed under _CC0_
 
+## quick setup
+
+	cd ~/git
+	git clone https://github.com/Joostvanderlaan/git-sync.git
+	cp ~/git/git-sync/git-sync ~/notities 
+	vi ~/git-sync.sh
+
+Add to this file in root of home dir all the repos you want to sync:
+
+	#!/bin/sh
+
+	cd ~/notities
+	~/notities/git-sync
+
+Add to crontab, syncing every 5 minutes:
+
+	  25 */5 * * * * /home/joost/git-sync.sh                                              
+
 ## Use case
 
 Suppose you have a set of text files you care about, multiple machines

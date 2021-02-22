@@ -24,7 +24,7 @@ Add to this file in root of home dir all the repos you want to sync:
 
 Add to crontab, syncing every 5 minutes:
 
-	  25 */5 * * * * /home/joost/git-sync.sh                                              
+	  */5 * * * * ~/git-sync.sh                                              
 
 ## Use case
 

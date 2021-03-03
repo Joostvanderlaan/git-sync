@@ -27,8 +27,9 @@ Add to this file in root of home dir all the repos you want to sync:
 	~/notities/git-sync
 
 Add to crontab, syncing every 5 minutes:
-
-	  */5 * * * * ~/git-sync.sh                                              
+	
+	crontab -e
+	*/5 * * * * ~/git-sync.sh                                              
 
 Check cron log (Ubuntu)
 

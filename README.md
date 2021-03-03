@@ -14,6 +14,10 @@ as crucial as having one.
 	git clone https://github.com/Joostvanderlaan/git-sync.git
 	cp ~/git/git-sync/git-sync ~/notities 
 	vi ~/git-sync.sh
+	chmod +x ~/git-sync.sh
+	
+	cd ~/notities && git config --bool branch.master.sync true
+
 
 Add to this file in root of home dir all the repos you want to sync:
 
